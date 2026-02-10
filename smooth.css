@@ -1,0 +1,121 @@
+
+* {
+    transition: all 0.3s ease !important;
+}
+body {
+    background: linear-gradient(135deg, #edebff 0%, #e6f0fa 100%);
+    background-attachment: fixed;
+    animation: gentle-breath 20s ease infinite;
+}
+@keyframes gentle-breath {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+#front-key-visual .main-photo {
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.photo-item {
+    padding: 12px !important;
+}
+.photo-frame-content > img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.photo-frame-content:hover > img {
+    transform: scale(1.05);
+}
+.photo-frame-content > .info {
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+}
+.quote-item {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    padding: 15px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(5px);
+}
+#search-form input {
+    border: 2px solid #ddd;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+}
+#search-form button {
+    background: rgb(160, 32, 32);
+    border: none;
+}
+#search-form button:hover {
+    background: #ff6b6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+}
+#eater-holder {
+    border: none !important;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    backdrop-filter: blur(3px);
+}
+#menu-bar ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-btn {
+    display: block;
+    padding: 14px 28px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #333;
+    font-family: "Itim", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.4); 
+    position: relative;
+    overflow: hidden;
+}
+.menu-btn:hover {
+    transform: translateY(-4px) scale(1.08);
+    background: rgb(172, 48, 48);
+    color: rgb(252, 252, 252);
+    box-shadow: 0 12px 25px rgba(255, 107, 107, 0.35);
+}
+.menu-btn:active {
+    transform: scale(0.95);
+}
+.menu-btn.active {
+    transform: translateY(-4px) scale(1.08);
+    background: rgb(172, 48, 48);
+    color: rgb(252, 252, 252);
+    box-shadow: 0 12px 25px rgba(255, 107, 107, 0.35);
+}body {
+    background: url('https://i.pinimg.com/736x/ea/1c/5a/ea1c5a0e4a57df936d8bcd01612dbc14.jpg') center/cover fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit;
+    background-attachment: fixed;
+    filter: blur(2) brightness(3);
+    z-index: -2;
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(171, 98, 98, 0.75); 
+    backdrop-filter: blur(4px);
+    z-index: -1;
+}

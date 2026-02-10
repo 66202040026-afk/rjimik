@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+body{
+    font-family: "Itim", sans-serif;
+    font-size: 16px;
+    color: rgb(red, green, blue);
+    margin: 0;
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: "itim", sans-serif;
+}
+a{
+    color:rgb(0, 0, 0) ;
+    text-decoration:none;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+.absolute-middle{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.absolute-middle .absolute-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatey(-50%) translateX(-50%);
+}   
+form.style-1 input, form.style-1 button{
+    border-radius: 4px;
+    padding: 1px solid #aaa;
+}
+form.style-1 button{
+    background: #aaa;
+    color: white;
+    cursor: pointer;
+}
+form.style-1 button:hover{
+    background: coral;
+}
